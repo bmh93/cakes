@@ -1,0 +1,200 @@
+:root {
+	--backColor: #200B0A;
+	--padding: 60px 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+.navbar {
+	position: absolute;
+    z-index: 3;
+    width: 100%;
+}
+.navbar-light .navbar-nav .active > .nav-link {
+	color: #ad8da1;
+
+}
+.navbar .navbar-brand span {
+	color: white;
+}
+.collapse .navbar-nav .nav-item a {
+	color: white;
+}
+
+/* Slider */
+.slider .carousel-item {
+	height: 100vh;
+	background-size: contain;
+}
+.slider .carousel-one {
+	background-image: url(../images/1.jpg);
+}
+.slider .carousel-two {
+	background-image: url(../images/2.jpg);
+}
+.slider .carousel-three {
+	background-image: url(../images/3.jpg);
+}
+.slider .carousel-inner .overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.6) ;
+	z-index: 2;
+}
+.slider .carousel-inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.slider .carousel-inner .text {
+	position: absolute;
+    color: white;
+    z-index: 3;
+}
+.slider .carousel-inner h1{
+	font-size: 70px;
+	max-width: 800px;
+}
+.slider .carousel-inner h6{
+	font-weight: 100;
+    word-spacing: 3px;
+    letter-spacing: 3px;
+}
+.carousel-control-next, .carousel-control-prev {
+	z-index: 2;
+}
+/* Story 2 */ 
+
+.story {
+	padding: var(--padding);
+}
+.story span {
+	font-size: 23px;
+    color: darkgray;
+}
+.story h4 {
+	font-family: 'Italianno';
+	font-size: 40px;
+}
+/* Cake 3 */ 
+.cake .container {
+	padding: 80px;
+    background-color: var(--backColor);
+}
+
+.cake .container .content .row {
+	display: flex;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 50px; 
+}
+.cake .container .content h2 {
+	margin: 10px;
+}
+.cake .container .content .row:last-child{
+	margin-bottom: 0;
+}
+.cake .container .content .row .col{
+	padding: 0;
+}
+.cake .container .content a{
+	color: var(--backColor);
+    font-weight: 500;
+    border-bottom: 1px solid var(--backColor);
+}
+/* Quto 3 */
+.quto {
+	padding: var(--padding);
+}
+.quto .container {
+	position: relative;
+}
+.quto p{
+	width: 70%;
+    margin: auto;
+ 	padding-bottom: 15px;
+}
+
+.quto h6{
+	font-size: 10px;
+}
+/* Contact 3 */
+.contact {
+	padding: 20px 0;
+	color: white;
+	background-color:var(--backColor);
+}
+.contact span i {
+	width: 20px;
+}
+.contact span {
+	border-radius: 50%;
+    padding: 6px;
+    border: 1px solid white;
+}
+
+@media (max-width: 768px){
+	.cake .content p {
+		font-size: small;
+		padding: 5px;
+		margin: 0;
+	}
+	.cake .container {
+		padding: 30px;
+	}
+}
+@media (max-width: 576px){
+	.cake .content p {
+		font-size: small;
+		padding: 5px;
+		margin: 5px 0;
+	}
+	.cake .container {
+		padding: 30px;
+	}
+}
+.pad {
+	padding: 0;
+}
+.space {
+	padding: 10px;
+}
+.welcome {
+	padding: var(--padding);
+}
+.welcome .container p {
+	width: 65%;
+  margin: auto;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+.welcome .container .row .pic1,
+.welcome .container .row .pic2 {
+  width: 100%;
+  height: 450px;
+  background-size: cover;	
+}
+.welcome .container .row .pic2{
+	background-image: url("../images/100.jpg");
+
+}
+.welcome .container .row .pic1{
+	background-image: url("../images/cake2.jpg");
+
+}
+.welcome .container .row .w-border{
+  width: 98%;
+  margin: auto;
+  height: 439px;
+  border: 2px solid white;
+  position: relative;
+  top: 1%;
+}
+.welcome .container a{
+	  background-color: var(--backColor);
+    padding: 10px 20px;
+    color: white;
+}
